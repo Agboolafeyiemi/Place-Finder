@@ -1,0 +1,274 @@
+$background-color: #2a2e37;
+$search-bg-color: #242628;
+$icon-color: #00fede;
+$transition: all 0.5s ease;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  //background: grey;
+}
+.formText {
+  background: url(./images/usa.jpg) no-repeat center top / cover;
+  text-align: center;
+  height: 70vh;
+  opacity: 9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+
+  h1 {
+    position: relative;
+    top: 229px;
+    font-size: 27px;
+  }
+}
+
+//Places
+.places {
+  text-align: center;
+  padding: 3rem 2rem;
+  position: relative;
+  bottom: -343px;
+  color: black;
+
+  .h1 {
+    //color: white;
+    max-width: 100rem;
+    margin: 0 auto 6rem auto;
+  }
+
+  .location-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 7rem;
+  }
+  img {
+    position: relative;
+    width: 23.9rem;
+    height: 20rem;
+    top: 0rem;
+    object-fit: cover;
+  }
+  .place {
+    text-align: left;
+    background: grey;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+
+    h4,
+    h3 {
+      margin-left: 12px;
+      align-items: center;
+      font-size: 1rem;
+    }
+  }
+}
+
+.search {
+  width: 100px;
+  height: 100px;
+  margin: 40px auto 0;
+  background-color: $search-bg-color;
+  position: relative;
+  transition: $transition;
+  top: 210px;
+  &:before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 100%;
+    position: relative;
+    background-color: $icon-color;
+    transition: $transition;
+  }
+  &.open {
+    width: 420px;
+    border: 1px solid grey;
+    box-shadow: 0 0 01px rgba(0, 0, 0, 0.1), 0 2px 4px 1px rgba(0, 0, 0, 0.18);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.73);
+    &:before {
+      height: 60px;
+      margin: 20px 0 20px 30px;
+      position: absolute;
+    }
+  }
+  &.open ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 7px;
+
+    &::before {
+      content: " ";
+    }
+  }
+
+  &.open li {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #00fede;
+    &:hover {
+      text-decoration: underline;
+      background-color: rgba(128, 128, 128, 0.2);
+    }
+  }
+}
+
+.search-box {
+  width: 100%;
+  height: 100%;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+  color: #fff;
+  padding: 20px 100px 20px 45px;
+  font-size: 40px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.search-button {
+  width: 100px;
+  height: 100px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.search-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  border: 3px solid $icon-color;
+  display: block;
+  position: relative;
+  margin-left: 5px;
+  transition: $transition;
+  &:before {
+    content: "";
+    width: 3px;
+    height: 15px;
+    position: absolute;
+    right: -2px;
+    top: 30px;
+    display: block;
+    background-color: $icon-color;
+    transform: rotate(-45deg);
+    transition: $transition;
+  }
+  &:after {
+    content: "";
+    width: 3px;
+    height: 15px;
+    position: absolute;
+    right: -12px;
+    top: 40px;
+    display: block;
+    background-color: $icon-color;
+    transform: rotate(-45deg);
+    transition: $transition;
+  }
+}
+//Auto component
+.App-Componenet {
+  margin: 150px auto 0 auto;
+  width: 600px;
+}
+//UserPage
+.userPage {
+  // background-color: white;
+  // display: flex;
+  // flex-direction: row;
+  // padding: 1.5rem 1.5rem 2.5rem;
+  // color: #1c1d1f;
+  // margin: 146px;
+  // height: 594px;
+  // border-radius: 4px;
+
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: row;
+  padding: 1.5rem 1.5rem 2.5rem;
+  color: #1c1d1f;
+  margin: 146px;
+  height: 776px;
+  border-radius: 4px;
+  width: 73vw;
+  position: relative;
+  right: 0;
+  left: 85px;
+  bottom: 0;
+  top: 0;
+}
+.userImg {
+  background: url(./images/l.jpg) no-repeat top / cover;
+  margin-right: 1.5rem;
+  min-height: 25rem;
+  min-height: 12.5rem;
+  width: 40%;
+  border-radius: 67px;
+}
+.userImg:hover {
+  background: url(./images/usa.jpg) no-repeat top / cover;
+}
+.userText {
+  -webkit-box-flex: 2.25;
+  -ms-flex: 2.25;
+  flex: 2.25;
+  width: auto;
+}
+.userText p {
+  font-size: 1rem;
+}
+.userInfo {
+  width: 56%;
+}
+.history {
+  color: black;
+  font-size: 1.6rem;
+  padding-bottom: 2px;
+}
+.history p:nth-child(1) {
+  border-bottom: 2px solid black;
+}
+.history p:nth-child(2) {
+  position: relative;
+  font-size: 1.6rem;
+}
+.link {
+  font-size: 1rem;
+}
+.link button {
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 2px 4px black;
+  color: white;
+  background-color: grey;
+}
+.link button:hover {
+  color: pink;
+  background-color: black;
+}
+.wrongData {
+  display: flex;
+  flex-direction: column;
+  height: 61vh;
+  justify-content: center;
+  align-content: center;
+  margin-left: 277px;
+  font-size: 20px;
+}
