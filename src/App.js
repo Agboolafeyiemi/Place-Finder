@@ -2,9 +2,9 @@ import React, { Component, Fragment } from "react";
 import data from "./data";
 import AutoComplete from "./Autocomplete";
 import "./App.scss";
-import usa  from "./images/usa.jpg";
-import  back from "./images/back.jpg";
-import l  from "./images/l.jpg";
+import usa from "./images/usa.jpg";
+import back from "./images/back.jpg";
+import l from "./images/l.jpg";
 
 class App extends Component {
   render() {
@@ -31,14 +31,14 @@ class App extends Component {
             </div>
 
             <div className="place">
-            <img src={back} />
+              <img src={back} />
               <h4>Lagos</h4>
               <h3>lattitude: 6.5243793</h3>
               <h3>longtitude: 4.3792057</h3>
             </div>
 
             <div className="place">
-            <img src={l} />
+              <img src={l} />
               <h4>Ibadan</h4>
               <h3>lattitude: 6.5243793</h3>
               <h3>longtitude: 7.3792057</h3>

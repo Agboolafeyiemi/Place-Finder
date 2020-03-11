@@ -13,7 +13,7 @@ body {
   background: url(./images/usa.jpg) no-repeat center top / cover;
   text-align: center;
   height: 70vh;
-  opacity: 0.8;
+  opacity: 0.4;
   top: 0;
   left: 0;
   bottom: 0;
@@ -22,6 +22,7 @@ body {
   z-index: -1;
 
   h1 {
+    color: white;
     position: relative;
     top: 229px;
     font-size: 27px;
@@ -37,10 +38,10 @@ body {
   color: black;
 
   h1 {
-    //color: white;
+    color: white;
     margin: 61px;
     max-width: 100rem;
-    margin: 0 auto 6rem auto;
+    // margin: 0 auto 6rem auto;
   }
 
   .location-grid {
@@ -117,10 +118,11 @@ body {
   &.open li {
     padding: 10px 15px;
     cursor: pointer;
-    background-color: #00fede;
+    background-color: white;
     &:hover {
+      color: white;
       text-decoration: underline;
-      background-color: rgba(128, 128, 128, 0.2);
+      background-color: black;
     }
   }
 }
@@ -189,24 +191,16 @@ body {
   margin: 150px auto 0 auto;
   width: 600px;
 }
+
 //UserPage
 .userPage {
-  // background-color: white;
-  // display: flex;
-  // flex-direction: row;
-  // padding: 1.5rem 1.5rem 2.5rem;
-  // color: #1c1d1f;
-  // margin: 146px;
-  // height: 594px;
-  // border-radius: 4px;
-
-  background-color: darkgrey;
+  background-color: white;
   display: flex;
   flex-direction: row;
   padding: 1.5rem 1.5rem 2.5rem;
   color: #1c1d1f;
   margin: 146px;
-  height: 776px;
+  height: 876px;
   border-radius: 4px;
   width: 73vw;
   position: relative;

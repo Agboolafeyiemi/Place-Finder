@@ -76,15 +76,9 @@ class AutoComplete extends Component {
             location: dat.location,
             link: dat.link,
             history: dat.history,
-            image: dat.photos
           }
         });
       }
-      // else if (query !== dat.name) {
-      //   this.props.history.push({
-      //     pathname: "/wronquery/",
-      //   });
-      // }
     }
   };
 
