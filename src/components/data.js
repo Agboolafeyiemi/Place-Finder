@@ -8,7 +8,7 @@ const data = {
           lat: 6.5243793,
           lng: 3.3792057
         },
-        photos: "https://res.cloudinary.com/dhyzvgwdt/image/upload/v1584006117/osun_tvfsrt.jpg",
+        photos: "https://res.cloudinary.com/dhyzvgwdt/image/upload/v1584006101/lagosbridge_iaeyq8.jpg",
         history: `Lagos, sometimes referred to as Lagos State to distinguish 
          it from Lagos Metropolitan Area, is a state in the southwestern geopolitical zone of Nigeria. 
         The smallest in area of Nigeria's 36 states,Lagos State is arguably the most economically important

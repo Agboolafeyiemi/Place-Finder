@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from "react";
 import AutoComplete from "./Autocomplete";
-import "./App.scss";
-import lagosbridge from "./images/lagosbridge.jpg";
-import back from "./images/back.jpg";
-import oyo from "./images/cocoahouse.jpeg";
+import "../App.scss";
+import lagosbridge from "../images/lagosbridge.jpg";
+import back from "../images/back.jpg";
+import oyo from "../images/cocoahouse.jpeg";
 
 class App extends Component {
   render() {
