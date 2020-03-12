@@ -9,10 +9,11 @@ $transition: all 0.5s ease;
 
 body {
   background: grey;
- font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
 }
 .formText {
-  background: url(https://res.cloudinary.com/dhyzvgwdt/image/upload/v1584009013/io_bi686r.jpg) no-repeat center top / cover;
+  background: url(https://res.cloudinary.com/dhyzvgwdt/image/upload/v1584009013/io_bi686r.jpg)
+    no-repeat center top / cover;
   text-align: center;
   height: 70vh;
   opacity: 0.4;
@@ -283,4 +284,87 @@ body {
   align-content: center;
   margin-left: 277px;
   font-size: 20px;
+}
+
+@media (max-width: 500px) {
+  .search {
+    width: 100px;
+    height: 100px;
+
+    background-color: #242628;
+    position: relative;
+    transition: all 0.5s ease;
+    top: 2rem;
+    left: -8rem;
+  }
+  .formText {
+    width: 118%;
+  }
+  .formText h1 {
+    top: 3rem;
+    width: 95%;
+  }
+  .search.open {
+    width: 51%;
+    margin-left: 11rem;
+  }
+  .places h1 {
+    position: relative;
+    top: -36px;
+    margin: 0;
+    text-align: center;
+  }
+  .places img {
+    width: 24.3rem;
+  }
+  .places .place a {
+    margin: 1rem 0.8rem;
+  }
+  .place {
+    width: 112vw;
+    padding: 8px;
+  }
+  .places {
+    bottom: -15rem;
+    padding: 0.4rem;
+  }
+
+  .userPage {
+    padding: 2rem;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    color: #1c1d1f;
+
+    border-radius: 4px;
+    width: 73vw;
+    position: relative;
+    right: 0;
+    margin: 0;
+    left: 0;
+    width: fit-content;
+    bottom: 0;
+    top: 0;
+  }
+  .textSection {
+    flex-direction: column;
+  }
+  .textSection img {
+    position: relative;
+    width: 132%;
+    height: 20rem;
+    top: 2rem;
+    object-fit: cover;
+    margin-left: -2.6rem;
+
+    border-radius: 4px;
+
+    margin-bottom: 5rem;
+  }
+  .history p {
+    width: 100%;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
 }
