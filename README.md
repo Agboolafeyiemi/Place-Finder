@@ -1,7 +1,7 @@
 
 This project was bootstrapped with [Create React App]
 
-Start the project on yout local
+Start the project on your local
 
 ### `yarn start`
 
