@@ -2,29 +2,18 @@ import React, { Component } from "react";
 import data from "./data";
 
 class AutoComplete extends Component {
-  constructor(props) {
-    super(props);
-    this.items = [
-      "Abuja",
-      "Lagos",
-      "Enugu",
-      "Oyo",
-      "Ogun",
-      "Abia",
-      "Ekiti",
-      "Osun",
-    ];
-    this.state = {
-      isClick: false,
-      suggestions: [],
-      text: "",
-      results: [],
-      name: [],
-      location: "",
-      image: ""
-    };
-  }
-  handleinputDisplay = () => {
+  items = ["Abuja", "Lagos", "Enugu", "Oyo", "Ogun", "Abia", "Ekiti", "Osun"];
+  state = {
+    isClick: false,
+    suggestions: [],
+    text: "",
+    results: [],
+    name: [],
+    location: "",
+    image: ""
+  };
+
+  handleInputDisplay = () => {
     this.setState({ isClick: true });
   };
   onTextChanged = e => {
@@ -66,16 +55,17 @@ class AutoComplete extends Component {
     event.preventDefault();
     const query = [...this.state.text].join("");
     const mapRes = [...this.state.results];
-    
-    for(let dat of mapRes){
-      if (query === dat.name) {
+
+    for (let data of mapRes) {
+      if (query === data.name) {
         this.props.history.push({
           pathname: "/userPage/",
           state: {
-            name: dat.name,
-            location: dat.location,
-            link: dat.link,
-            history: dat.history,
+            name: data.name,
+            location: data.location,
+            link: data.link,
+            history: data.history,
+            photo: data.photos
           }
         });
       }
@@ -88,7 +78,7 @@ class AutoComplete extends Component {
     return (
       <div
         className={`${this.state.isClick === true ? "search open" : "search"}`}
-        onClick={this.handleinputDisplay}
+        onClick={this.handleInputDisplay}
       >
         <form onSubmit={this.goToUserPage}>
           <input

@@ -8,7 +8,7 @@ const data = {
           lat: 6.5243793,
           lng: 3.3792057
         },
-        photos: "l",
+        photos: "https://media.gettyimages.com/photos/urban-life-in-lagos-picture-id642241974?s=612x612",
         history: `Lagos, sometimes referred to as Lagos State to distinguish 
          it from Lagos Metropolitan Area, is a state in the southwestern geopolitical zone of Nigeria. 
         The smallest in area of Nigeria's 36 states,Lagos State is arguably the most economically important
@@ -27,7 +27,7 @@ const data = {
           lng: 9.3792057
         },
         photos:
-          "https://media.gettyimages.com/photos/zuma-rock-picture-id157372879?s=2048x2048",
+          "https://image.shutterstock.com/image-photo/aerial-mapo-hall-ibadan-600w-1127989112.jpg",
         history: `Oyo, state, western Nigeria. Oyo was reduced in size when Osun
          state was created out of its eastern portion in 1991. Oyo is bounded by the states of 
          Kwara on the north, Osun on the east, and Ogun on the south and by the Republic of Benin on the west. 
@@ -46,8 +46,8 @@ const data = {
           lat: 6.5243793,
           lng: 2.3792057
         },
-        photos:
-          "https://media.gettyimages.com/photos/african-city-lagos-nigeria-picture-id801444278?s=2048x2048",
+        photos: 
+          "https://media.gettyimages.com/photos/african-landscape-and-highway-traffic-abuja-nigeria-picture-id586944540?s=2048x2048",
         history: `Abuja, city, capital of Nigeria. It lies in the central part of Nigeria, in the Federal
            Capital Territory (FCT; created 1976). The city is approximately 300 miles (480 km) northeast of Lagos, 
            the former capital (until 1991). 
@@ -69,7 +69,7 @@ const data = {
           lng: 3.3792057
         },
         photos:
-          "https://media.gettyimages.com/photos/african-city-lagos-nigeria-picture-id801444278?s=2048x2048",
+          "https://idonsabi.com/wp-content/uploads/2019/02/Arinta-Waterfalls-Ekiti-600x445.jpg",
         history: `Abia, state, east-central Nigeria. Abia was administratively created in 1991 from the eastern half of former Imo state. It is bordered by the states of Enugu and Ebonyi to the north, Akwa Ibom to the east and southeast, Rivers to the south and southwest, and Imo and Anambra to the west. Abia includes areas of oil-palm bush and tropical rain forest in its southern part and woodland savanna in its hilly north. Most of the population is engaged in agriculture; yams, taro, corn (maize), rice, and cassava are the staple crops, and oil palm is the main cash crop. Mineral resources include lead and zinc.
   
           The state’s chief industrial centre is Aba, which lies on the railway north from Port Harcourt and manufactures textiles, 
@@ -87,7 +87,7 @@ const data = {
         },
   
         photos:
-          "https://media.gettyimages.com/photos/african-city-lagos-nigeria-picture-id801444278?s=2048x2048",
+          "https://idonsabi.com/wp-content/uploads/2019/02/Arinta-Waterfalls-Ekiti-600x445.jpg",
         history: `
           Ado-Ekiti, town, capital of Ekiti state, southwestern Nigeria. It lies in the Yoruba Hills,
            at the intersection of roads from Akure, Ilawe Ekiti, Ilesha, Ila Orangun, and Ikare, and is situated 92 
@@ -111,7 +111,7 @@ const data = {
             lng: 3.3792057
           },
           photos:
-            "https://media.gettyimages.com/photos/african-city-lagos-nigeria-picture-id801444278?s=2048x2048",
+            "https://image.shutterstock.com/image-photo/aerial-mapo-hall-ibadan-600w-1127989112.jpg",
           history: `
             Ogun, state, western Nigeria, created in 1976 and comprising former Abeokuta and 
             Ijebu provinces of former Western state, the latter carved out of former Western region in 1967. 
@@ -133,7 +133,7 @@ const data = {
           lng: 3.3792057
         },
         photos:
-          "https://media.gettyimages.com/photos/african-city-lagos-nigeria-picture-id801444278?s=2048x2048",
+          "https://image.shutterstock.com/image-photo/aerial-mapo-hall-ibadan-600w-1127989112.jpg",
         history: `Enugu, town, capital of Enugu state, southeastern Nigeria, located at the foot of the Udi Plateau. 
           Enugu is on the railroad from Port Harcourt, 150 miles (240 km) south-southwest, and at the intersection of roads from Aba,
            Onitsha, and Abakaliki. The town owes its existence to the discovery of coal on the plateau in 1909, 
@@ -150,7 +150,7 @@ const data = {
           lng: 3.3792057
         },
         photos:
-          "https://media.gettyimages.com/photos/high-angle-view-of-buildings-in-city-picture-id997757812?s=2048x2048",
+          "https://idonsabi.com/wp-content/uploads/2019/02/Arinta-Waterfalls-Ekiti-600x445.jpg",
         history: ` Osun, state, western Nigeria. Osun state was created in 1991 
           from the eastern third of Oyo state. It is bounded by the states of Kwara on the northeast, 
           Ekiti and Ondo on the east, Ogun on the south, and Oyo on the west and northwest.

@@ -1,14 +1,13 @@
 import React, { Component, Fragment } from "react";
-import data from "./data";
 import AutoComplete from "./Autocomplete";
 import "./App.scss";
-import usa from "./images/usa.jpg";
+import lagosbridge from "./images/lagosbridge.jpg";
 import back from "./images/back.jpg";
-import l from "./images/l.jpg";
+import oyo from "./images/cocoahouse.jpeg";
 
 class App extends Component {
   render() {
-    console.log(data.candidates[0].photos);
+   
     return (
       <Fragment>
         <div className="App-Componenet">
@@ -24,24 +23,24 @@ class App extends Component {
 
           <div className="location-grid">
             <div className="place">
-              <img src={usa} />
-              <h4>Abuja</h4>
-              <h3>lattitude: 7.5243793</h3>
-              <h3>longtitude: 3.3792057</h3>
+              <img src={back} alt={"picture of a popular place in Abuja"} />
+              <a href={'https://www.britannica.com/place/Abuja-national-capital-Nigeria'}>Abuja</a>
+              <h3>latitude: 7.5243793</h3>
+              <h3>longitude: 3.3792057</h3>
             </div>
 
             <div className="place">
-              <img src={back} />
-              <h4>Lagos</h4>
-              <h3>lattitude: 6.5243793</h3>
-              <h3>longtitude: 4.3792057</h3>
+              <img src={lagosbridge} alt={"picture of a popular place in Lagos State"} />
+              <a href={'https://www.britannica.com/place/Lagos-Nigeria'}>Lagos</a>
+              <h3>latitude: 6.5243793</h3>
+              <h3>longitude: 4.3792057</h3>
             </div>
 
             <div className="place">
-              <img src={l} />
-              <h4>Ibadan</h4>
-              <h3>lattitude: 6.5243793</h3>
-              <h3>longtitude: 7.3792057</h3>
+              <img src={oyo} alt={"A popular place in Oyo state"} />
+              <a href={'https://www.britannica.com/place/Oyo-state-Nigeria'}>Oyo</a>
+              <h3>latitude: 6.5243793</h3>
+              <h3>longitude: 7.3792057</h3>
             </div>
           </div>
         </section>

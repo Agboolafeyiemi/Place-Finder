@@ -2,12 +2,14 @@ $background-color: #2a2e37;
 $search-bg-color: #242628;
 $icon-color: #00fede;
 $transition: all 0.5s ease;
+
 * {
   box-sizing: border-box;
 }
 
 body {
   background: grey;
+ font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
 }
 .formText {
   background: url(./images/usa.jpg) no-repeat center top / cover;
@@ -22,7 +24,7 @@ body {
   z-index: -1;
 
   h1 {
-    color: white;
+    color: black;
     position: relative;
     top: 229px;
     font-size: 27px;
@@ -41,7 +43,6 @@ body {
     color: white;
     margin: 61px;
     max-width: 100rem;
-    // margin: 0 auto 6rem auto;
   }
 
   .location-grid {
@@ -66,7 +67,12 @@ body {
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
 
-    h4,
+    a {
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: black;
+      margin: 0.8rem;
+    }
     h3 {
       margin-left: 12px;
       align-items: center;
@@ -96,7 +102,6 @@ body {
     width: 420px;
     border: 1px solid grey;
     box-shadow: 0 0 01px rgba(0, 0, 0, 0.1), 0 2px 4px 1px rgba(0, 0, 0, 0.18);
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.73);
     &:before {
@@ -161,6 +166,7 @@ body {
   position: relative;
   margin-left: 5px;
   transition: $transition;
+
   &:before {
     content: "";
     width: 3px;
@@ -173,6 +179,7 @@ body {
     transform: rotate(-45deg);
     transition: $transition;
   }
+
   &:after {
     content: "";
     width: 3px;
@@ -186,6 +193,7 @@ body {
     transition: $transition;
   }
 }
+
 //Auto component
 .App-Componenet {
   margin: 150px auto 0 auto;
@@ -200,7 +208,6 @@ body {
   padding: 1.5rem 1.5rem 2.5rem;
   color: #1c1d1f;
   margin: 146px;
-  height: 876px;
   border-radius: 4px;
   width: 73vw;
   position: relative;
@@ -209,36 +216,45 @@ body {
   bottom: 0;
   top: 0;
 }
-.userImg {
-  background: url(./images/l.jpg) no-repeat top / cover;
-  margin-right: 1.5rem;
-  min-height: 25rem;
-  min-height: 12.5rem;
-  width: 40%;
-  border-radius: 67px;
-}
+
 .userImg:hover {
   background: url(./images/usa.jpg) no-repeat top / cover;
 }
-.userText {
+
+.userText1,
+.userText2 {
   -webkit-box-flex: 2.25;
   -ms-flex: 2.25;
   flex: 2.25;
   width: auto;
 }
+.userText2 {
+  border-bottom: 2px solid black;
+}
+
 .userText p {
   font-size: 1rem;
 }
-.userInfo {
-  width: 56%;
+
+.textSection {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+
+  img {
+    position: relative;
+    width: 40%;
+    height: 20rem;
+    top: 2rem;
+    object-fit: cover;
+    margin-right: 25px;
+    border-radius: 4px;
+  }
 }
 .history {
   color: black;
   font-size: 1.6rem;
   padding-bottom: 2px;
-}
-.history p:nth-child(1) {
-  border-bottom: 2px solid black;
 }
 .history p:nth-child(2) {
   position: relative;
@@ -257,6 +273,7 @@ body {
 .link button:hover {
   color: pink;
   background-color: black;
+  cursor: pointer;
 }
 .wrongData {
   display: flex;
