@@ -4,6 +4,7 @@ import App from "./App";
 import NotFound from "./NotFound";
 import userpage from "./userPage";
 import Wronquery from "./Wrongquery";
+import myFavuorites from "./FavouritesPlaces"
 
 const Router = () => (
   <BrowserRouter>
@@ -11,6 +12,7 @@ const Router = () => (
       <Route exact path="/" component={App} />
       <Route path="/wronquery/" component={Wronquery} />
       <Route path="/userPage/" component={userpage} />
+      <Route path= "/favouritePage/" component={myFavuorites}/>
       
       <Route component={NotFound} />
     </Switch>

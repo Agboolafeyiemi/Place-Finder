@@ -10,9 +10,9 @@ class App extends Component {
    
     return (
       <Fragment>
-        <div className="App-Componenet">
+        {/* <div className="App-Componenet"> */}
           <AutoComplete history={this.props.history} />
-        </div>
+        {/* </div> */}
 
         <section className="formText">
           <h1> Click here to search for your favourites places </h1>

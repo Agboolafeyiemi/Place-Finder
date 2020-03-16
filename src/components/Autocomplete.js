@@ -20,7 +20,7 @@ class AutoComplete extends Component {
     const value = e.target.value;
     let suggestions = [];
 
-    this.setState({
+    this.setState ({
       results: data.candidates
     });
 
@@ -45,8 +45,8 @@ class AutoComplete extends Component {
     }
     return (
       <ul>
-        {suggestions.map(item => (
-          <li onClick={() => this.suggestionSelected(item)}>{item}</li>
+        {suggestions.map((item , index) => (
+          <li key={index} onClick={() => this.suggestionSelected(item)}>{item}</li>
         ))}
       </ul>
     );
@@ -55,7 +55,7 @@ class AutoComplete extends Component {
     event.preventDefault();
     const query = [...this.state.text].join("");
     const mapRes = [...this.state.results];
-
+    
     for (let data of mapRes) {
       if (query === data.name) {
         this.props.history.push({

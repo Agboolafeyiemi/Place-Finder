@@ -156,7 +156,8 @@ const data = {
           Ekiti and Ondo on the east, Ogun on the south, and Oyo on the west and northwest.
           The Yoruba Hills run through the northern part of Osun state. The state has a covering of 
           tropical rain forest, and the Osun is the most important river. 
-          Osun state is inhabited mainly by the Yoruba people.`
+          Osun state is inhabited mainly by the Yoruba people.`,
+          link: "https://www.britannica.com/place/Enugu-Nigeria"
       }
     ]
   };
